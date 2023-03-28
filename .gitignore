@@ -131,3 +131,4 @@ dmypy.json
 *.idea/
 *.vsconfig
 *.DS_Store
+preprocessed_data
