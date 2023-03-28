@@ -132,3 +132,4 @@ dmypy.json
 *.vsconfig
 *.DS_Store
 preprocessed_data
+raw_data
