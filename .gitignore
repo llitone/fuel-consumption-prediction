@@ -133,3 +133,4 @@ dmypy.json
 *.DS_Store
 preprocessed_data
 raw_data
+test.ipynb
