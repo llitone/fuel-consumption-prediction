@@ -134,6 +134,7 @@ dmypy.json
 preprocessed_data/
 raw_data/
 models/
+
 test.ipynb
 
 *.csv
@@ -144,6 +145,8 @@ test.ipynb
 *.xltm
 *.xls
 *.xlt
+
+*.xls
 *.xml
 *.xlam
 *.xla
