@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 
+from units.models import Models
+
 application = Flask(__name__)
 
 CORS(application, resource={
@@ -8,6 +10,7 @@ CORS(application, resource={
         "origins": "*"
     }
 })
+models = Models()
 
 
 @application.route("/")
@@ -30,4 +33,4 @@ def register_user():
         response = make_response(jsonify({"error": "data must be list"}), 400)
         return response
 
-    # return ...[request.json["model"]].predict(request.json["data"])
+    return models[request.json["model"]].predict(request.json["data"])
