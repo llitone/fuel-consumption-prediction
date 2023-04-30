@@ -4,7 +4,7 @@ from .parts import *
 
 
 class _ModelsPaths(Enum):
-    xgb_fuel_130 = "./units/models/saves/xgb_fuelTA130_0998.bf"
+    xgb_fuel_130 = "./units/models/saves/fuel/xgb_fuelTA130_0998.bf"
 
 
 class Models(object):
