@@ -1,1 +1,1 @@
-from .xgb import XGBModel
+from .xgb import XGBFuelModel

@@ -3,7 +3,7 @@ import numpy as np
 from ..base import BaseModel
 
 
-class XGBModel(BaseModel):
+class XGBFuelModel(BaseModel):
     def __init__(self, model_path: str):
         super().__init__(model_path)
 
