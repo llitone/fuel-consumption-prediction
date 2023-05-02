@@ -152,6 +152,6 @@ test.ipynb
 *.xlr
 *.doc
 *.docx
-predictions.png
+
 *.png
 catboost_info/
