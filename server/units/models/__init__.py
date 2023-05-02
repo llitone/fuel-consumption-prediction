@@ -10,11 +10,11 @@ class _ModelsPaths(Enum):
 
 class Models(object):
     def __init__(self):
-        self.xgb_fuel_130 = XGBFuelModel(_ModelsPaths.xgb_fuel_130.value)
-        self.catboost_fuel_130 = CatBoostFuelModel(_ModelsPaths.catboost_fuel_130.value)
+        self.xgb_fuel_130 = XGBFuelModelV1(_ModelsPaths.xgb_fuel_130.value)
+        self.catboost_fuel_130 = CatBoostFuelModelV1(_ModelsPaths.catboost_fuel_130.value)
         self.__all_models = {
-            "xgb_fuel_130": self.xgb_fuel_130,
-            "catboost_fuel_130": self.catboost_fuel_130
+            "xgb_fuel_130_v1": self.xgb_fuel_130,
+            "catboost_fuel_130_v1": self.catboost_fuel_130
         }
 
     def __getitem__(self, item):
