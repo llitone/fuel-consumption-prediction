@@ -133,7 +133,6 @@ dmypy.json
 *.DS_Store
 preprocessed_data/
 raw_data/
-models/
 
 test.ipynb
 
@@ -146,7 +145,6 @@ test.ipynb
 *.xls
 *.xlt
 
-*.xls
 *.xml
 *.xlam
 *.xla
@@ -155,3 +153,5 @@ test.ipynb
 *.doc
 *.docx
 predictions.png
+*.png
+catboost_info/
