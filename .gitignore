@@ -130,8 +130,9 @@ dmypy.json
 *.idea/
 *.vsconfig
 *.DS_Store
-preprocessed_data
-raw_data
+preprocessed_data/
+raw_data/
+
 test.ipynb
 
 *.csv
@@ -142,12 +143,14 @@ test.ipynb
 *.xltm
 *.xls
 *.xlt
-*.xls
+
 *.xml
 *.xlam
 *.xla
 *.xlw
 *.xlr
-
 *.doc
 *.docx
+
+*.png
+catboost_info/
