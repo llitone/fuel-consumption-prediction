@@ -1,5 +1,4 @@
 from enum import Enum
-from typing import List
 
 from .parts import *
 
@@ -18,7 +17,7 @@ class Models(object):
             "catboost_fuel_130_v1": self.catboost_fuel_130_v1
         }
 
-    def __getitem__(self, item: str) -> List[int]:
+    def __getitem__(self, item: str) -> XGBFuelModelV1 | CatBoostFuelModelV1:
         if item == "xgb_fuel_130":
             return self.__all_models["xgb_fuel_130_v1"]
         elif item == "catboost_fuel_130":
