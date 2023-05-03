@@ -1,9 +1,9 @@
 import numpy as np
 
-from ..xgb import XGBFuelModel
+from ..catboost import CatBoostFuelModel
 
 
-class CatBoostFuelModelV1(XGBFuelModel):
+class CatBoostFuelModelV1(CatBoostFuelModel):
     def __init__(self, model_path: str):
         super().__init__(model_path)
 
