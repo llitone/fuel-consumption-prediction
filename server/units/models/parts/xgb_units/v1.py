@@ -17,7 +17,7 @@ class XGBFuelModelV1(XGBFuelModel):
                 date = np.vstack([date, np.array(i.split("-"))])
             date = date[1:]
             data = np.concatenate([date, np.int32(data[:, 1:])], axis=1)
-            data = np.int32(data)
+            data = np.float(data)
         return data
 
     def predict(self, data: np.ndarray) -> np.ndarray:
