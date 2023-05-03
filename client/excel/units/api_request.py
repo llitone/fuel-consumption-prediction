@@ -4,7 +4,7 @@ import requests
 class APIRequest(object):
     def __init__(self, url: str):
         self.url = url
-        self.model = "xgb_fuel_130"
+        self.model = "catboost_fuel_130_v1"
         self.data = []
 
     def jsonify(self):
