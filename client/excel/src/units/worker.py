@@ -1,5 +1,4 @@
 import xlwings
-
 from .api_request import APIRequest
 
 
@@ -16,13 +15,12 @@ class ExcelGenerator(object):
         self.sheet = self.workbook.sheets["Данные"]
 
     def update_fuel_ta_130(self):
-        request = APIRequest("http://192.168.0.48:1111/api/v1.0/models/fuel/")
+        request = APIRequest()
         skip = []
         for column in self.__columns:
             if str(self.sheet.range(column + "12").value) not in ["", "0"] and \
                     str(self.sheet.range(column + "184").value) not in ["", "0"]:
                 request.append(
-                    self._convert_date(self.sheet.range(column + "1").value),
                     self.sheet.range(column + "12").value,
                     self.sheet.range(column + "184").value
                 )

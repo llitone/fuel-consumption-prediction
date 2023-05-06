@@ -1,10 +1,11 @@
 import os
 
-from config import *
-from units.worker import ExcelGenerator
+from src.config import *
+from src.units.worker import ExcelGenerator
 
 
 if __name__ == "__main__":
+    os.chdir("../")
     if files == ".":
         for file in os.listdir():
             if file.endswith(file_ends):
