@@ -33,15 +33,14 @@ class TA130FuelNNV1(BaseTorchModel):
             self.scaler: StandardScaler = pickle.load(file)
 
     def predict(self, data: np.array):
+        self.model.eval()
         data = np.array(data)[:, 1:]
         data = self.scaler.transform(np.array(data, dtype=float))
         data = torch.tensor(data, dtype=torch.float32)
         data = DataLoader(list(zip(data, torch.tensor([0] * len(data)))))
-        self.model.eval()
         predictions = [self.model(X_batch) for X_batch, _ in data]
         predictions = list(map(lambda x: x.detach().numpy(), predictions))
         predictions = list(map(lambda x: x.reshape(-1).tolist(), predictions))
         predictions = np.array(list(chain.from_iterable(predictions)))
         predictions = self.convert(predictions)
         return list(predictions)
-
