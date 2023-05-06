@@ -1,7 +1,12 @@
+import os
+
+from config import file_ends
 from units.worker import ExcelGenerator
 
 
 if __name__ == "__main__":
-    generator = ExcelGenerator("123.xlsm")
-    generator.update_fuel_ta_130()
+    for file in os.listdir():
+        if file.endswith(file_ends):
+            generator = ExcelGenerator(str(file))
+            generator.update_fuel_ta_130()
 
