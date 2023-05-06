@@ -32,5 +32,5 @@ def register_user():
     if not isinstance(request.json["data"], list):
         response = make_response(jsonify({"error": "data must be list"}), 400)
         return response
-
+    print(models[request.json["model"]].predict(request.json["data"]))
     return models[request.json["model"]].predict(request.json["data"])

@@ -42,5 +42,5 @@ class TA130FuelNNV1(BaseTorchModel):
         predictions = list(map(lambda x: x.reshape(-1).tolist(), predictions))
         predictions = np.array(list(chain.from_iterable(predictions)))
         predictions = self.convert(predictions)
-        return predictions
+        return list(predictions)
 
