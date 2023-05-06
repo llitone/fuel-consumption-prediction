@@ -1,10 +1,11 @@
 import requests
+from ..config import url, model
 
 
 class APIRequest(object):
-    def __init__(self, url: str):
-        self.url = url
-        self.model = "catboost_fuel_130_v1"
+    def __init__(self, request_url: str = f"http://{url}/api/v1.0/models/fuel/"):
+        self.url = request_url
+        self.model = model
         self.data = []
 
     def jsonify(self):
