@@ -34,7 +34,8 @@ class TA130FuelNNV1(BaseTorchModel):
 
     def predict(self, data: np.array):
         self.model.eval()
-        data = np.array(data)[:, 1:]
+        if np.array(data).shape[1] == 3:
+            data = np.array(data)[:, 1:]
         data = self.scaler.transform(np.array(data, dtype=float))
         data = torch.tensor(data, dtype=torch.float32)
         data = DataLoader(list(zip(data, torch.tensor([0] * len(data)))))
