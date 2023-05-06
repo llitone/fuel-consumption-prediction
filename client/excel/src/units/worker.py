@@ -21,6 +21,7 @@ class ExcelGenerator(object):
             if str(self.sheet.range(column + "12").value) not in ["", "0"] and \
                     str(self.sheet.range(column + "184").value) not in ["", "0"]:
                 request.append(
+                    self._convert_date(self.sheet.range(column + "1").value),
                     self.sheet.range(column + "12").value,
                     self.sheet.range(column + "184").value
                 )
