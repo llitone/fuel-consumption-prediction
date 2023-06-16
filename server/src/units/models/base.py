@@ -16,5 +16,5 @@ class BaseModel(object):
     def _convert(data):
         return np.array(data)
 
-    def predict(self, data: np.ndarray) -> np.ndarray:
+    def predict(self, data: np.ndarray) -> object:
         return self._convert(self.model.predict(data)).tolist()
