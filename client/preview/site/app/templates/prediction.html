@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Авторизация</h1>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.production.label }}<br>
+        {{ form.production() }}<br>
+        {% for error in form.production.errors %}
+    <div role="alert">
+        {{ error }}
+    </div>
+    {% endfor %}
+    </p>
+    <p>
+        {{ form.heat_release.label }}<br>
+        {{ form.heat_release(type="heat_release") }}<br>
+        {% for error in form.heat_release.errors %}
+    <div role="alert">
+        {{ error }}
+    </div>
+    {% endfor %}
+    </p>
+    <p>{{ form.submit(type="submit") }}</p>
+</form>
+{% endblock %}
