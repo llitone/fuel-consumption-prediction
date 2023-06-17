@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 
-from units.models import Models
-from units.headers import add_headers
+from .units.models import Models
+from .units.headers import add_headers
 
 application = Flask(__name__)
 
@@ -19,8 +19,8 @@ def index():
     return "hello world"
 
 
-@application.route(f"/api/v1.0/models/fuel/", methods=["POST"])
 @add_headers
+@application.route(f"/api/v1.0/models/fuel/", methods=["POST"])
 def register_user():
     if not request.json:
         response = make_response(jsonify({"error": "keys not success"}), 400)

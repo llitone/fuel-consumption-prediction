@@ -1,9 +1,9 @@
 import pickle
-from itertools import chain
-
 import numpy as np
 import torch
 import torch.nn.functional as f
+
+from itertools import chain
 
 from torch import nn
 from torch.utils.data import DataLoader
