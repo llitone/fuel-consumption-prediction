@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 
-from units.models import Models
-from units.headers import add_headers
+from .units.models import Models
+from .units.headers import add_headers
 
 application = Flask(__name__)
 

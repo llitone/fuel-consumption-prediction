@@ -1,14 +1,22 @@
+import os
 from enum import Enum
 
 from .parts import *
 
 
 class _ModelsPaths(Enum):
-    xgb_fuel_130_v1 = "./units/models/saves/fuel/xgb_fuelTA130_099889.bf"
-    catboost_fuel_130_v1 = "./units/models/saves/fuel/cat_boost_fuelTA130_09924.bf"
-    catboost_fuel_130_v2 = "./units/models/saves/fuel/cat_boost_fuelTA130v2.bf"
-    torch_model_fuel_130_v1 = "./units/models/saves/fuel/FuelTA130NN.pt"
-    torch_scaler_fuel_130_v1 = "./units/models/saves/fuel/nn_fuelTA130_0868_scaler.bf"
+    if os.path.realpath(".").split("/")[-1] == "server":
+        xgb_fuel_130_v1 = "./src/units/models/saves/fuel/xgb_fuelTA130_099889.bf"
+        catboost_fuel_130_v1 = "./src/units/models/saves/fuel/cat_boost_fuelTA130_09924.bf"
+        catboost_fuel_130_v2 = "./src/units/models/saves/fuel/cat_boost_fuelTA130v2.bf"
+        torch_model_fuel_130_v1 = "./src/units/models/saves/fuel/FuelTA130NN.pt"
+        torch_scaler_fuel_130_v1 = "./src/units/models/saves/fuel/nn_fuelTA130_0868_scaler.bf"
+    else:
+        xgb_fuel_130_v1 = "./server/src/units/models/saves/fuel/xgb_fuelTA130_099889.bf"
+        catboost_fuel_130_v1 = "./server/src/units/models/saves/fuel/cat_boost_fuelTA130_09924.bf"
+        catboost_fuel_130_v2 = "./server/src/units/models/saves/fuel/cat_boost_fuelTA130v2.bf"
+        torch_model_fuel_130_v1 = "./server/src/units/models/saves/fuel/FuelTA130NN.pt"
+        torch_scaler_fuel_130_v1 = "./server/src/units/models/saves/fuel/nn_fuelTA130_0868_scaler.bf"
 
 
 class Models(object):
