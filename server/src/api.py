@@ -19,8 +19,8 @@ def index():
     return "hello world"
 
 
-@application.route(f"/api/v1.0/models/fuel/", methods=["POST"])
 @add_headers
+@application.route(f"/api/v1.0/models/fuel/", methods=["POST"])
 def register_user():
     if not request.json:
         response = make_response(jsonify({"error": "keys not success"}), 400)
