@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    width: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #074717;
+}
+
+header h2 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin-left: 30px;
+}
+
+main {
+    margin: auto;
+    min-height: calc(100vh - 120px);
+    background-image: url('/images/chp2-transformed.jpeg');
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+    /* background-position-y: -200px; */
+    background-position-x: -50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main_bg {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+.form {
+    opacity: 0.92;
+    border-radius: 10px;
+    position: relative;
+    height: 400px;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 100px auto;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form h2 {
+    font-family: "Roboto", sans-serif;
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    margin-top: 200px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #969896;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #777977;
+}
+
+.footer {
+    background-color: #3c744a;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer img {
+    margin-left: 16px;
+    width: 30px;
+    height: 30px;
+    margin-top: 26px;
+}
+
+.footer p {
+    margin-top: 30px;
+    color: #eeeded;
+}
+
+.footer hr {
+    background-color: #969896;
+    width: auto;
+    height: 2px;
+}
