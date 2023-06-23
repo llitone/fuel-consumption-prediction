@@ -4,7 +4,7 @@ const axios = require('axios');
 const alert = require('alert')
 
 
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res, next)    {
     res.render('index')
 })
 
@@ -15,6 +15,7 @@ router.post('/api', function(req, res, next){
         if (req.body.first == 767 && req.body.second == 878) {
             alert(1123)
             res.redirect('/')
+            return
         }
         if (req.body.choosemodel == 1) {
             axios.post('http://b5e2-90-189-194-252.ngrok-free.app/api/v1.0/models/fuel/', {
