@@ -4,32 +4,43 @@
     font-family: 'Roboto Slab', serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
     font-family: "Roboto", sans-serif;
 }
 
 header {
+    position: relative;
     width: auto;
     height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     background-color: #0a6dc7;
 }
 
-header h2 {
+header a {
     color: white;
-    margin-left: 30px;
+    margin-right: 30px;
 }
 
 header img {
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 main {
@@ -188,17 +199,18 @@ footer hr {
 
 .about-project {
     width: 100%;
-    min-height: 400px;
+    min-height: 600px;
 }
 
 .project-text {
     display: inline;
     float: left;
-    width: 55%;
-    height: 400px;
+    width: 50%;
+    height: 500px;
     margin: 50px;
     position: relative;
     background: #f2f2f2;
+    overflow-wrap: break-word;
 }
 
 .project-text p {
@@ -217,9 +229,10 @@ footer hr {
     display: inline;
     float: right;
     height: 400px;
-    width: 30%;
+    width: 35%;
     margin: 50px;
     position: relative;
+    max-width: 100%;
     background: #f2f2f2;
 }
 
@@ -227,4 +240,95 @@ footer hr {
     margin: 30px;
     display: inline;
     float: left;
+}
+
+.models {
+    width: 100%;
+    min-height: 600px;
+}
+
+.models-text {
+    display: inline;
+    float: right;
+    width: 50%;
+    height: 500px;
+    margin: 50px;
+    position: relative;
+    background: #f2f2f2;
+    overflow-wrap: break-word;
+}
+
+.models-text p {
+    color: #5b5c5b;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.models-text h1 {
+    color: #414241;
+    font-size: 75px;
+    margin: 10px;
+}
+
+.models-image {
+    display: inline;
+    float: left;
+    height: 400px;
+    width: 35%;
+    margin: 50px;
+    position: relative;
+    max-width: 100%;
+    background: #f2f2f2;
+}
+
+.models-image img {
+    margin: 30px;
+    display: inline;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    .image-logo {
+        width: 100%;
+    }
+
+    .image-logo img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    form {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+
+    .project-image {
+        width: 90%;
+    }
+
+    .project-text {
+        width: 90%;
+        height: 800px;
+    }
+
+    .main-downer {
+        height: 1600px;
+    }
+
 }
