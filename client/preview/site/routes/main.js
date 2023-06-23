@@ -4,7 +4,7 @@ const axios = require('axios');
 const alert = require('alert')
 
 
-router.get('/', function(req, res, next)    {
+router.get('/', function(req, res, next) {
     res.render('index')
 })
 
