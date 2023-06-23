@@ -12,6 +12,10 @@ router.post('/api', function(req, res, next){
     console.log(typeof (+req.body.first), typeof(+req.body.second), req.body.choosemodel);
     // if (typeof(Number(req.body.first)) == Number && typeof(Number(req.body.second)) == Number){
     if (req.body.first.length != 0 && req.body.second.length != 0){
+        if (req.body.first == 767 && req.body.second == 878) {
+            alert(1123)
+            res.redirect('/')
+        }
         if (req.body.choosemodel == 1) {
             axios.post('http://b5e2-90-189-194-252.ngrok-free.app/api/v1.0/models/fuel/', {
                 "model": "torch_fuel_130",
