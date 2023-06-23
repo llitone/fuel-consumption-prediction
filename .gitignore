@@ -155,3 +155,4 @@ test.ipynb
 *.png
 catboost_info/
 *test.py
+!client/*.png
