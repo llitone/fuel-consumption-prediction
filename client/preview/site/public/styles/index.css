@@ -209,7 +209,7 @@ footer hr {
     height: 500px;
     margin: 50px;
     position: relative;
-    background: #f2f2f2;
+    /*background: #f2f2f2;*/
     overflow-wrap: break-word;
 }
 
@@ -233,7 +233,7 @@ footer hr {
     margin: 50px;
     position: relative;
     max-width: 100%;
-    background: #f2f2f2;
+    /*background: #f2f2f2;*/
 }
 
 .project-image img {
@@ -254,7 +254,7 @@ footer hr {
     height: 500px;
     margin: 50px;
     position: relative;
-    background: #f2f2f2;
+    /*background: #f2f2f2;*/
     overflow-wrap: break-word;
 }
 
@@ -278,7 +278,7 @@ footer hr {
     margin: 50px;
     position: relative;
     max-width: 100%;
-    background: #f2f2f2;
+    /*background: #f2f2f2;*/
 }
 
 .models-image img {
@@ -288,10 +288,108 @@ footer hr {
 }
 
 
+.nn {
+    width: 100%;
+    min-height: 600px;
+}
 
+.nn-text {
+    display: inline;
+    float: left;
+    width: 50%;
+    height: 500px;
+    margin: 50px;
+    position: relative;
+    /*background: #f2f2f2;*/
+    overflow-wrap: break-word;
+}
 
+.nn-text p {
+    color: #5b5c5b;
+    margin: 10px;
+    font-size: 20px;
+}
 
+.nn-text h1 {
+    color: #414241;
+    font-size: 75px;
+    margin: 10px;
+}
 
+.nn-text h2 {
+    color: #414241;
+    font-size: 45px;
+    margin: 10px;
+}
+
+.nn-image {
+    display: inline;
+    float: left;
+    height: 400px;
+    width: 35%;
+    margin: 50px;
+    position: relative;
+    max-width: 100%;
+    /*background: #f2f2f2;*/
+}
+
+.nn-image img {
+    margin: 30px;
+    display: inline;
+    float: left;
+}
+
+/* XGB */
+.xgb {
+    width: 100%;
+    min-height: 600px;
+}
+
+.xgb-text {
+    display: inline;
+    float: left;
+    width: 50%;
+    height: 500px;
+    margin: 50px;
+    position: relative;
+    /*background: #f2f2f2;*/
+    overflow-wrap: break-word;
+}
+
+.xgb-text p {
+    color: #5b5c5b;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.xgb-text h1 {
+    color: #414241;
+    font-size: 75px;
+    margin: 10px;
+}
+
+.xgb-text h2 {
+    color: #414241;
+    font-size: 45px;
+    margin: 10px;
+}
+
+.xgb-image {
+    display: inline;
+    float: left;
+    height: 400px;
+    width: 35%;
+    margin: 50px;
+    position: relative;
+    max-width: 100%;
+    /*background: #f2f2f2;*/
+}
+
+.xgb-image img {
+    margin: 30px;
+    display: inline;
+    float: left;
+}
 
 
 

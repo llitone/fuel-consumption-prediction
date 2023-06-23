@@ -1,20 +1,20 @@
-<div class="main-upper">
+<div class="main-upper content">
     <div class="main_bg">
         <div class="image-logo">
             <img src="../images/big-logo.png" alt="" width="500px" height="490px">
         </div>
         <div class="form">
             <form action="/api" method="post">
-            <h2>Впишите значения</h2> <br>
-            <input type="number" name="first" placeholder="Выработка электроэнергии ТА гр.130">
-            <input type="number" name="second" placeholder="Отпуск тепла из ТО ТА гр.130">
-            <select name="choosemodel">
-                <option value="1">Нейронная сеть</option>
-                <option value="2">XGB</option>
-            </select>
-            
-            <button type="submit">Предсказать</button>
-        </form>
+                <h2>Введите значения</h2> <br>
+                <input type="number" name="first" placeholder="Выработка электроэнергии ТА гр.130">
+                <input type="number" name="second" placeholder="Отпуск тепла из ТО ТА гр.130">
+                <select name="choosemodel">
+                    <option value="1">Нейронная сеть</option>
+                    <option value="2">XGBRegressor</option>
+                </select>
+
+                <button type="submit">Предсказать</button>
+            </form>
         </div>
     </div>
 </div>
@@ -23,42 +23,121 @@
         <div class="project-text">
             <h1>О проекте</h1>
             <hr>
-            <p>Проект по предсказанию расходов условного топлива предназначен для повышения эффективности работы
+            <p>
+                Проект по предсказанию расходов условного топлива предназначен для повышения эффективности работы
                 теплоэлектростанций
-                (ТЭЦ) и оптимизации расходов на топливо. </p>
-            <p>Суть проекта заключается в создании математической модели, которая позволит предсказывать расходы
+                (ТЭЦ) и оптимизации расходов на топливо.
+            </p>
+            <p>
+                Суть проекта заключается в создании математической модели, которая позволит предсказывать расходы
                 условного топлива на
                 основе различных параметров. Для этого используются методы искусственного интеллекта, машинного обучения
-                и анализа
-                данных.</p>
-            <p>Полученные данные и прогнозы расходов помогут оптимизировать работу ТЭЦ, снизить затраты на топливо,
+                и анализа данных.
+            </p>
+            <p>
+                Полученные данные и прогнозы расходов помогут оптимизировать работу ТЭЦ, снизить затраты на топливо,
                 повысить
-                эффективность работы и уменьшить негативное воздействие на окружающую среду.</p>
-            <p>Основными преимуществами проекта являются увеличение прибыли за счет экономии на топливе, уменьшение
+                эффективность работы и уменьшить негативное воздействие на окружающую среду.
+            </p>
+            <p>
+                Основными преимуществами проекта являются увеличение прибыли за счет экономии на топливе, уменьшение
                 вредных выбросов и
-                повышение конкурентоспособности ТЭЦ на рынке.</p>
+                повышение конкурентоспособности ТЭЦ на рынке.
+            </p>
         </div>
         <div class="project-image">
             <img src="../images/chp2-winter.jpg" alt="" width="500px" height="350px">
         </div>
     </div>
     <hr>
-    <div class="models" id="models">
+    <div class="models" id="data">
         <div class="models-image">
-            <img src="../images/chp2-winter.jpg" alt="" width="500px" height="350px">
+            <img src="../images/calendarplot.svg" alt="" width="600px" height="300px">
         </div>
         <div class="models-text">
-            <h1>Модели</h1>
+            <h1>Данные</h1>
             <hr>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laborum recusandae eligendi itaque
-                reiciendis, ipsum autem rem est quaerat ut sit nulla, placeat, neque corrupti quae incidunt omnis
-                quibusdam atque!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vel quis neque nobis, veniam tempora
-                repudiandae nesciunt deleniti qui exercitationem et harum voluptatum consectetur mollitia blanditiis, ea
-                quibusdam, aliquam dolor.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora temporibus nam vitae corrupti! Autem
-                hic nostrum consequuntur nisi? Totam distinctio maiores, dolores eaque explicabo non doloremque! Sequi
-                voluptatibus excepturi delectus?</p>
+            <p>
+                Выработка электроэнергии является одним из параметров, необходимых для построения модели прогнозирования
+                расхода условного топлива. Она определяет количество электроэнергии, которое производится на данной ТЭЦ
+                в единицу времени.
+             </p>
+            <p>
+                Отпуск тепла также является важным фактором для прогнозирования
+                расхода условного топлива.
+            </p>
+            <p>
+                Важно учитывать, что эти показатели будут меняться в зависимости от времени суток,
+                времени года, технического состояния станции и других факторов, поэтому необходимо
+                проводить систематический мониторинг и корректировать модель прогнозирования.
+            </p>
         </div>
     </div>
+    <hr>
+    <div class="nn" id="nn">
+        <div class="nn-text">
+            <h1>Нейронная сеть </h1>
+            <hr>
+            <p>
+                Регрессионная нейронная сеть, принимающая на вход параметры выработки
+                электроэнергии и отпуска тепла, может быть использована для предсказания
+                удельного расхода условного топлива на ТЭЦ.
+            </p>
+            <p>
+                Некоторое количество входных данных используется для тестирования точности модели,
+                а оставшееся количество данных используется для обучения нейронной сети.
+                В процессе обучения, нейронная сеть автоматически настраивает свои внутренние
+                параметры, чтобы обеспечить наилучшее предсказание удельного расхода топлива на ТЭЦ.
+            </p>
+        </div>
+        <div class="nn-image">
+            <img src="../images/nn_kdeplot.svg" alt="" width="500px" height="350px">
+        </div>
+    </div>
+    <div class="nn">
+        <div class="nn-text">
+            <h2>Качество</h2>
+            <hr>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laborum recusandae eligendi itaque
+                reiciendis, ipsum autem rem est quaerat ut sit nulla, placeat, neque corrupti quae incidunt omnis
+                quibusdam atque!
+            </p>
+        </div>
+        <div class="nn-image">
+            <img src="../images/nn_test_plot.svg" alt="" width="500px" height="350px">
+        </div>
+    </div>
+    <div class="xgb">
+        <div class="xgb-text">
+            <h1>XGBRegressor</h1>
+            <hr>
+            <p>
+                XGBRegressor (eXtreme Gradient Boosting Regressor) - это алгоритм машинного обучения, основанный на градиентном
+                бустинге решающих деревьев, который используется для предсказания числовых значений.
+                Он относится к семейству алгоритмов ensemble, которые комбинируют несколько моделей
+                для повышения точности прогнозирования. XGBRegressor может использоваться в широком
+                спектре задач, включая прогнозирование цен на недвижимость, изучение поведения клиентов,
+                анализ финансовых данных и т.д.
+            </p>
+        </div>
+        <div class="xgb-image">
+            <img src="../images/xgb_kdeplot.svg" alt="" width="500px" height="350px">
+        </div>
+    </div>
+    <div class="xgb">
+        <div class="xgb-text">
+            <h2>Качество</h2>
+            <hr>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laborum recusandae eligendi itaque
+                reiciendis, ipsum autem rem est quaerat ut sit nulla, placeat, neque corrupti quae incidunt omnis
+                quibusdam atque!
+            </p>
+        </div>
+        <div class="xgb-image">
+            <img src="../images/xgb_test_plot.svg" alt="" width="500px" height="350px">
+        </div>
+    </div>
+
 </div>
