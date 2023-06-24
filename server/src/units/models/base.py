@@ -14,7 +14,7 @@ class BaseModel(object):
 
     @staticmethod
     def _convert(data):
-        return np.array(data)
+        return np.array(data, dtype=np.float32)
 
     def predict(self, data: np.ndarray) -> object:
         return self._convert(self.model.predict(data)).tolist()
