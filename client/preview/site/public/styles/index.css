@@ -395,7 +395,10 @@ html {
   scroll-behavior: smooth;
 }
 
-
+.header-text {
+    /*background-color: #5b5c5b;*/
+    width: 100%;
+}
 
 @media only screen and (max-width: 1300px) {
     .image-logo {
