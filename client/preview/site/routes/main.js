@@ -11,7 +11,6 @@ router.get('/', function(req, res, next) {
 router.post('/api', function(req, res, next){
     console.log(typeof (+req.body.first), typeof(+req.body.second), req.body.choosemodel);
     let model = "torch_fuel_130"
-    // if (typeof(Number(req.body.first)) == Number && typeof(Number(req.body.second)) == Number){
     if (req.body.first.length != 0 && req.body.second.length != 0) {
         if (req.body.first < 0 || req.body.second < 0) {
             alert("Значения могут быть только положительными!")
