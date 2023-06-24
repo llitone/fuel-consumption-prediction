@@ -163,7 +163,7 @@ form button {
 form button:hover,
 form button:active,
 form button:focus {
-    background: #777977;
+    background-color: #0a6dc7
 }
 
 footer {
@@ -389,6 +389,10 @@ footer hr {
     margin: 30px;
     display: inline;
     float: left;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
