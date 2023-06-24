@@ -155,5 +155,5 @@ test.ipynb
 *.png
 catboost_info/
 *test.py
-
 !predictions/graphs/*.png
+!client/preview/site/public/images/*png
