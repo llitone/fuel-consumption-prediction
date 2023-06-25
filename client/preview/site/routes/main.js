@@ -23,7 +23,7 @@ router.post('/api', function(req, res, next){
             return
         }
         if (req.body.choosemodel == 2) {
-            let model = "xgb_fuel_130"
+            model = "xgb_fuel_130"
         }
 
         if (req.body.first == 767 && req.body.second == 878) {
