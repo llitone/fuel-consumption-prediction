@@ -1,4 +1,1 @@
-try:
-    from .run import application
-except ModuleNotFoundError:
-    pass
+from .run import application
