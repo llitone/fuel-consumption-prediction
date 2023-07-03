@@ -1,6 +1,6 @@
 Flask~=2.3.2
 requests>=2.31.0
-Flask-Cors~=3.0.10
+Flask-Cors~=4.0.0
 catboost~=1.2
 numpy~=1.25.0
 xgboost~=1.7.6
