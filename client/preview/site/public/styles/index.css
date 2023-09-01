@@ -30,11 +30,11 @@ header {
     display: flex;
     justify-content: start;
     align-items: center;
-    background-color: #0a6dc7;
+    background-color: #504f4f;
 }
 
 header a {
-    color: white;
+    color: #dcdcdc;
     margin-right: 30px;
 }
 
@@ -163,11 +163,11 @@ form button {
 form button:hover,
 form button:active,
 form button:focus {
-    background-color: #0a6dc7
+    background-color: #504f4f;
 }
 
 footer {
-    background-color: #0a6dc7;
+    background-color: #504f4f;
     height: 60px;
     display: flex;
     flex-direction: row;
