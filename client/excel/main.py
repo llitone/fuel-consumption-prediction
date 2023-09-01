@@ -5,7 +5,7 @@ from src.units.worker import ExcelGenerator
 
 
 if __name__ == "__main__":
-    os.chdir("../")
+    os.chdir("./")
     if files == ".":
         for file in os.listdir():
             if file.endswith(file_ends):

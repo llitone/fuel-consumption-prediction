@@ -33,7 +33,7 @@ router.post('/api', function(req, res, next){
             res.redirect('/result')
             return
         }
-        axios.post('http://b5e2-90-189-194-252.ngrok-free.app/api/v1.0/models/fuel/', {
+        axios.post('http://127.0.0.1:2342/api/v1.0/models/fuel/', {
                 "model": model,
                 "data": [
                     [req.body.first, req.body.second]
